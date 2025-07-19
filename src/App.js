@@ -1,5 +1,5 @@
 import React from 'react';
-import { ConfigProvider } from 'antd';
+import { Button, ConfigProvider } from 'antd';
 import PostsList from "./entities/post/posts-list";
 
 function App() {
