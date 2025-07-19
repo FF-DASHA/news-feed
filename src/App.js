@@ -1,8 +1,23 @@
+import React from 'react';
+import { ConfigProvider } from 'antd';
+import PostsList from "./entities/post/posts-list";
+
 function App() {
   return (
-    <div className="App">
-      we
-    </div>
+    <ConfigProvider
+      theme={{
+        token: {
+          colorBgContainer: '#1e0c08',
+          colorTextHeading: '#470101',
+          colorText: '#620000',
+         
+        },
+      }}
+    >
+      <div className="App" style={{ color: '#620000' }}>
+        <PostsList />
+      </div>
+    </ConfigProvider>
   );
 }
 
